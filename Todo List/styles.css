@@ -1,0 +1,111 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+  position: relative;
+  height: 90vh;
+}
+
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.js-input-name,
+.js-date {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.js-add-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.js-add-btn:hover {
+  background-color: #0056b3;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: auto 2fr 1fr auto;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+.list-grid > div:nth-child(2) {
+  font-weight: bold;
+}
+
+.list-grid > input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.list-grid .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.list-grid button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.list-grid button:first-of-type {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.list-grid button:first-of-type:hover {
+  background-color: #e0a800;
+}
+
+.list-grid button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+.list-grid button:last-of-type:hover {
+  background-color: #c82333;
+}
+p {
+  font-size: 20px;
+}
+footer {
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+  width: 96vw;
+}
